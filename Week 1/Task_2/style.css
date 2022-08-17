@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(102, 154, 171);
+}
+/* Example of id */ 
+    #my_id {
+        color: white; 
+        text-align: center;
+        font-size: 30;
+    }
+/*Example of class */
+    .my_class {
+        font-family: verdana, sans-serif;
+        font-size: 20px;
+    }
