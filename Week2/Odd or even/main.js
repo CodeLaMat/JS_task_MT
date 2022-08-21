@@ -1,14 +1,15 @@
-const checkNumbers = () => {
-    const x = Number (prompt('Please enter the number?'));
+const checkNumber = () => {
+    const x =  window.prompt ("Please enter the number?");
    
   
-    if (x>=0, x+=2) { 
+    if (x>=0) {
+        if (x%2) { 
         return console.log("The number is even");
     }
      else {
-        return console.log("The number is odd");
+        console.log("The number is odd");
     }
 }
 
-        
-  checkNumbers();
+}  
+  checkNumber();
