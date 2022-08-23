@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "Loop"
+		},
+		{
+			"path": "military"
+		},
+		{
+			"path": "Odd or even"
+		},
+		{
+			"path": "salary calculator"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Loop"
+	}
+}

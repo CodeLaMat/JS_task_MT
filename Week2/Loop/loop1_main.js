@@ -2,7 +2,7 @@
 1. (1 3 5 7 9 11…)
 */ 
 
-for (let number=1; number <= 100; number += 2) {
+for (let number=1; number < 100; number += 2) {
         console.log(number); 
 
 }

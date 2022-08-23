@@ -1,0 +1,27 @@
+* {
+    margin: 6;
+    padding: 6;
+}
+
+h1 {
+    text-align: center;
+
+}
+body {
+    background-color: rgb(137, 131, 131);
+
+}
+
+#button{
+    background-color: rgb(204, 180, 62);
+    border-style: dashed;
+}
+
+#total {
+    background-color: rgba(188, 220, 220, 0.212);
+    text-decoration: dashed;
+
+}
+
+
+

@@ -1,10 +1,12 @@
 //  Make a program that asks 25 numbers form the user. In the end program prints out average of the numbers.
- 
- do {   x = prompt("Please enter the distance in km."); 
-        y = prompt("Please enter the spent time in hour"); 
-        console.log(x/y);
-
-        } while (x>0); 
-                  
 
 
+let sum=0;
+let counter = 0;
+
+do {let input = Number(prompt("Please enter the next number"));
+
+    sum+=input;
+    counter++;
+} while (counter!=5)
+console.log("Average was", sum/counter);
