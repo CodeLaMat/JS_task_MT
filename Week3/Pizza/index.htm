@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Online pizza order</title>
+
+    </head>
+        <body>
+            <div class="container">
+                <div class="hero-image"></div>
+                <div class="content">
+                <h1> Welcome to REACT22S Pizza ordering page </h1>
+                <br><br>
+                <h4>Would like to order some pizza? Just scroll down, select your pizza and toppings and submit your order</h4>
+                </div>
+                
+                <form>
+              
+                <h3>Who is ordering?</h3> 
+                  <input type="text" placeholder="Your name please" id="name" required/>
+            
+                <h3>Please chose the size of the pizza</h3> 
+                    <p>The more pizza you order the less you pay</p>
+
+                <div>
+                    <input id="twoPizzas" type="radio" value="two" name="size" checked />
+                    <label for="twoPizzas">for 2 Pizzas pay 7.50</label>
+                </div>
+                <div>
+                    <input id="fourPizzas" type="radio" value="four" name="size" />
+                    <label for="fourPizzas">for 4 Pizzas pay 10.50</label>
+                </div>
+                <div>
+                    <input id="sixPizzas" type="radio" value="six" name="size"  />
+                    <label for="sixPizzas">for 6 Pizzas pay 12.50</label>
+                </div>
+                <div>
+                    <input id="eightPizzas" type="radio" value="eight" name="size" />
+                    <label for="eightPizzas">for 8 Pizzas pay 15.50</label>
+                </div>                        
+                <br>
+
+                <h3>Toppings</h3> 
+                <p>The first 4 toppings are included in the price. Every extra toppings adds 0.50 euros to the sum</p>
+        
+                <div>
+                    <input type="checkbox" name="toppings" id="sausage" value="sausage" checked/>
+                    <label for="sausage">Sausage Cubeo</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="oregano" value="oregano"/>
+                    <label for="oregano">Oregano</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="mushrooms" value="mushrooms"/>
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="pepper" value="pepper"/>
+                    <label for="pepper">Roasted Red Pepper</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="olives" value="olives"/>
+                    <label for="olives">Black Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="sauce" value="sauce"/>
+                    <label for="sauce">Pizza Sauce</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="tomatoes" value="tomatoes"/>
+                    <label for="tomatoes">Tomatoes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="cheddar" value="cheddar"/>
+                    <label for="cheddar">Cheddar Cheese</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="parmesan" value="parmesan"/>
+                    <label for="parmesan">Parmesan Cheese</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="BBQ" value="BBQ"/>
+                    <label for="BBQ">BBQ Sauce</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="mayonnaise" value="mayonnaise"/>
+                    <label for="mayonnaise">Mayonnaise</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni"/>
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="beef" value="beef"/>
+                    <label for="beef">Beef Ham</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="fish" value="fish"/>
+                    <label for="fish">Tuna Fish</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="sweetcorn" value="sweetcorn"/>
+                    <label for="sweetcorn">Sweetcorn</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="chicken" value="chicken"/>
+                    <label for="chicken">Chicken Slices</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="peppers" value="peppers"/>
+                    <label for="peppers">Green Peppers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="toppings" id="sesame" value="sesame"/>
+                    <label for="sesame">Sesame</label>
+                </div>
+
+                <h3>Delivery method</h3>
+                <p>Please select the delivery method</p>
+
+                <select id="delivery" name="delivery" required>
+                    <option value="homeDelivery">Home delivery + 5,00€ </option>
+                    <option value="eatIn">Eat in </option>
+                    <option value="pickUp">Pick up</option>
+                </select>
+
+                <p>Please submit your order</p>
+
+                <form> 
+                    <label for="submit"></label>
+                    <input type="submit"name="submit"value="submit"<br>
+                
+                </form>
+            </div>
+            <p id="order"></p>
+          </div>
+
+          <script src="main.js"></script>
+        </body>
+  
+</html>
