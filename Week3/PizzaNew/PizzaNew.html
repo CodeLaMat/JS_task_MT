@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="styleNew.css" />
 
     <title>Online pizza order</title>
 
@@ -25,23 +25,23 @@
             
                     <div class="pizzaSize">
                             
-                    <div class="pizzaSizeHeading"><h3>Please chose the size of the pizza</h3> 
+                    <div class="SizeHeading"><h3>Please chose the size of the pizza</h3> 
                         <p>The more pizza you order the less you pay</p>
                     </div>
                     <div>
-                        <input id="twoPizzas" type="radio" value="7.5" name="size" checked/>
+                        <input id="twoPizzas" type="radio" value="7.50" name="size" checked/>
                         <label for="twoPizzas">for 2 Pizzas pay 7.50</label>
                     </div>
                     <div>
-                        <input id="fourPizzas" type="radio" value="10.5" name="size"/>
+                        <input id="fourPizzas" type="radio" value="10.50" name="size"/>
                         <label for="fourPizzas">for 4 Pizzas pay 10.50</label>
                     </div>
                     <div>
-                        <input id="sixPizzas" type="radio" value="12.5" name="size"/>
+                        <input id="sixPizzas" type="radio" value="12.50" name="size"/>
                         <label for="sixPizzas">for 6 Pizzas pay 12.50</label>
                     </div>
                     <div>
-                        <input id="eightPizzas" type="radio" value="15.5" name="size"/>
+                        <input id="eightPizzas" type="radio" value="15.50" name="size"/>
                         <label for="eightPizzas">for 8 Pizzas pay 15.50</label>
                     </div>                        
                     <br>
@@ -133,17 +133,14 @@
 
                         <p>Please submit your order</p>
     
-                        <input type="submit" value="Submit order" class="orderSubmit">
+                        <button type="submit">Submit order</button>
                
                 </form>
             </div>
 
-            <div class="order">
-                <p class="totalPrice"></p>
-            </div>
+                <p class="orderText"></p>
 
-
-          <script src="main.js"></script>
+          <script src="scriptNew.js"></script>
         </body>
   
 </html>

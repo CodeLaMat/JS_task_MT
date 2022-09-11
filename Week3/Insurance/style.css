@@ -62,10 +62,11 @@
   
   .hero-image {
     width: 50vw;
-    background: url(/Pizza/meat-pizza-bell-pepper-basil-arugula-tomato-cheese-onion-top-view_141793-2772.jpg) no-repeat fixed;
+    background: url(https://dazeinfo.com/wp-content/uploads/2022/08/leads-for-life-insurance-business.jpeg) no-repeat fixed;
      margin-left: auto;
      display: block;
-     height: auto;
+     width: 1000px;
+     position: relative;
   }
   
   .content {
@@ -90,11 +91,5 @@
     width: 19vw;
   }
   span {
-    color: orangered;
+    color: rgb(0, 166, 255);
   }
-
-  .totalPrice {
-    display: block;
-    border: solid 2px;
-    background-color: antiquewhite
-}

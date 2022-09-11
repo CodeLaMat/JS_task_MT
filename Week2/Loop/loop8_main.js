@@ -11,6 +11,6 @@ for (let n = 0; n<input; n ++); {
               min=num;
        }
        else if ( num<min);
-              console.log ("The samllest number is", min);
+              console.log ("The samallest number is", min);
 
-              
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Insurance calculator</title>
+
+    </head>
+
+    
+        <body>
+            <div class="container">
+                <div class="hero-image"></div>
+                <div class="content">
+                <h1> Welcome to your insurance calculator </h1>
+                <br><br>
+                <h4>Please fill the blank to calculate your risk index</h4>
+                </div>
+                
+                <form>
+              
+                <h3>Your full name</h3> 
+                <label for="customerName">Age</label>
+                <input type="text" placeholder="Please enter your full name" id="name" required/>
+            
+                <h3>Your age</h3> 
+                <label for="customerAge">Age</label>
+                <input type="number" placeholder="Please enter your age" id="age" required/>
+
+                <h3>Your Current health condition</h3> 
+                <p>Please enter your current health condition</p>
+        
+                <div>
+                    <input type="checkbox" name="health" id="hypertension" value="hypertension" checked/>
+                    <label for="hypertension">Hypertension</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="health" id="diabete" value="diabete" />
+                    <label for="diabete">Diabete</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="health" id="overweight" value="overweight" />
+                    <label for="overweight">Diabete</label>
+                </div>
+
+                <h3>Your habits</h3> 
+                <p>Please enter your habits</p>
+                
+                <div class="habits">
+                <div>
+                    <input type="checkbox" name="habits" id="smoking" value="smoking" checked/>
+                    <label for="smoking">Smoking</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="habits" id="alcohol" value="alcohol" />
+                    <label for="alcohol">Alcohol</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="habits" id="drugs" value="drugs" />
+                    <label for="drugs">Drugs</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="habits" id="dailyExercise" value="dailyExercise" />
+                    <label for="dailyExercise">Daily exercise</label>
+                </div>
+                </div>
+      
+
+
+                <p>Please submit your answer to see the result</p>
+
+                <button type="submit" id="myBtn">Get index</button>
+
+                <p id="resultText">
+                </div>
+
+                </form>
+          <script src="main.js"></script>
+        </body>
+  
+</html>

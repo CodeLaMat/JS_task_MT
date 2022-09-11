@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 'Raleway', sans-serif;
+       color: rgba(0,0,0,.5);
+
+    background: linear-gradient(to right, green , teal); /* Standard syntax */
+   }
+
+.textSide {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 45vw;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+}
+.arrows {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background: bisque;
+    margin: 5px;
+    gap: 30px;
+}
+
+
+.arrows .firstLine{
+
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+
+
+
+}
+.arrows .secondLine{
+    display: flex;
+    width: 100%;
+    flex: auto;
+
+
+}
+.arrows .thirdLine{
+    display: flex;
+    width: 100%; 
+
+
+}
+
+.colorInput {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+   h3 {
+       font: 600 1.5em 'Raleway', sans-serif;
+       color: rgba(0,0,0,.5);
+       text-align: center;
+
+   }
+   h2 {
+    font: 900 1em 'Raleway', sans-serif;
+       color: rgba(0,0,0,.5);
+       text-align: center;
+       text-transform: none;
+
+   }
+   
+input[type="radio"] {
+    display:none;
+
+}
+
+
+.material-symbols-outlined {
+    display: flex;
+    font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;
+    background: grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    flex-direction: row;
+}
