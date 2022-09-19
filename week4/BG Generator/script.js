@@ -1,7 +1,7 @@
 // Define all the requried variables
 const form = document.querySelector('#bgGenerator')
-const firstColour = document.querySelector('.first');
-const secondColour = document.querySelector('.second');
+const firstColor = document.querySelector('.first');
+const secondColor = document.querySelector('.second');
 const direction = document.querySelectorAll('input [name="arrow"]');
 
 let text = document.querySelector ('p')
@@ -18,7 +18,7 @@ const selectedGradient = (event) => {
     }
   }
 
-  let gradient = `linear-gradient(${selectedValue}, ${firstColour.value}, ${secondColour.value})`;
+  let gradient = `linear-gradient(${selectedValue}, ${firstColor.value}, ${secondColor.value})`;
   console.log(gradient);
 
   document.body.style.backgroundImage = gradient;
