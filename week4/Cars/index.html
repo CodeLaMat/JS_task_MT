@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="script.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+        <body>
+            <section class="dataSection">
+                <form class="carForm">
+                    <h1>Car Data Storage</h1>
+
+                    <h2>Insert car data</h2>
+                        <div class="container">
+                            <div class="carData">
+                            <label for="licenseNumber">License number</label>
+                            <input type="text" id="licenseNumber" placeholder=" e.g. ABC-1234" name="carData"   autofocus>
+  
+                            <label for="manufacturer">Manufacturer</label>
+                            <input type="text" id="manufacturer" placeholder="e.g.Mercedes" name="carData"  autofocus>
+       
+                            <label for="model">Car model</label>
+                            <input type="text" id="model" placeholder="e.g. C-Class" name="carData"  autofocus>
+               
+                            <label for="owner">Car owner</label>
+                            <input type="text" id="owner" placeholder="Name" name="carData"  autofocus>
+       
+                            <label for="price">Car price</label>
+                            <input type="number" id="price" placeholder="e.g. 12.500" name="carData" autofocus>
+
+                            <label for="colour">Car colour</label>
+                            <input type="text" id="colour" placeholder="e.g. blue" name="carData" autofocus>
+                            </div>  
+
+                            <button id="addCar" >Add car</button>
+                            <button type="reset" >reset</button>
+                </section>
+                <section class="searchSection">
+                        <table>
+                            <tr id="tableHeading">
+                                <th>License number</th>
+                                <th>Manufacturer</th>
+                                <th>Car model</th>
+                                <th>Car owner</th>
+                                <th>Car price</th>
+                                <th>Car colour</th>
+                             </tr>
+  
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                         </table>
+                         </div>
+                    </form>
+                <form class="searchForm">
+                    <h2>Search car by license plate</h2>
+                    <div class="carSearch">
+                        <input type="search" id="searchInput" onclick="searchForCar" name="carSearch">
+                        <button id="searchButton">Search</button>
+                        
+                        <p id="searchResult"></p>
+
+                    </div>  
+                </form>
+            </section>
+                <script src="script.js"></script>
+            </body>
+            </html>

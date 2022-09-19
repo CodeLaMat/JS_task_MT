@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    grid: 5fr 5fr ;
+    font: 'Raleway', sans-serif;
+    background: rgb(203, 187, 187);
+    height: 100%;
+    margin:30px;
+}
+
+.container {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: left;
+    margin: 15px;
+}
+
+.carData {
+    display:grid;
+    margin: 5px;
+    align-content: left;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+input {
+    margin: 5px;
+}
+
+button{
+    padding: 10px;
+    width: 90px;
+    margin-top: 30px;
+}
+
+
+h2 {
+    margin: 20px;
+}
+
+.dataSection {
+    display: flex;
+    width: 600px;
+}
+
+.searchSection {
+    display: block;
+    width: 400px;
+    position: relative;
+}
+
+.searchForm {
+    margin-top: 200px;
+}
+

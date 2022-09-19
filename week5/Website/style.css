@@ -1,0 +1,171 @@
+* _{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #4d6891;
+    font-family:'Noto Sans', sans-serif;
+    color: white;
+}
+
+header, section, footer { 
+    padding: 2rem;
+}
+
+.btn {
+    background: #944a55;
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: beige;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+h2, p {
+    margin-bottom: 2rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 1rem;
+} 
+
+.bg {
+    background-color: white;
+}
+
+.bg a,
+.bg span {
+    color: #215179;
+}
+
+#mobileButton {
+    display:none;
+}
+
+section {
+    min-height: 50vh;
+    scroll-margin-top: 4rem;
+}
+
+#section1 {
+    background-color: #4d6891;
+}
+
+#section2 {
+    background-color: #344763;
+}
+
+#section3 {
+    background-color: #23344a;
+}
+
+#section4 {
+    background-color: #1c2f46;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #d9e4f6ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: white;
+    min-height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    color: #17212f;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgb(70, 65, 65);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.overlay, .modal, .close {
+    display: none;
+}
+
+#footer {
+    background-color: #020609;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+  /*MOBILE  */
+
+@media (max-width: 800px) {
+    nav ul {
+    display: none;
+    }
+h1 {
+    font-size: 1.5rem;
+    }
+
+#mobileButton {
+    background-color: transparent;
+    display: block;
+    border: none;
+    color: white;
+    padding: 1rem;
+    }
+
+nav.responsive ul {
+    background-color: #ffffff;
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 85px;
+     width: 100%;
+    }
+
+nav.responsive ul li {
+    display: block;
+    }
+
+nav.responsive ul li a{
+    color:#1c2f46;
+    }
+}
+
+
