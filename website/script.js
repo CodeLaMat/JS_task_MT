@@ -1,11 +1,11 @@
 const header = document.querySelector('header');
-const backButton = document.querySelector('#backToTop');
-const mobButton = document.querySelector('#mobileButton');
+const backButton = document.querySelector('#back_to_top');
+const mobButton = document.querySelector('#mob_button');
 const nav = document.querySelector('nav');
-let links = document.querySelectorAll('nav ul li a');
-const closeButton = document.querySelector('.closeBtn');
-const overlay = document.querySelector('.overlay');
+const links = document.querySelectorAll('nav ul li a');
 const modalButton = document.querySelector('#modalButton');
+const closeButton = document.querySelector('#closeButton');
+const overlay = document.querySelector('.overlay');
 
 window.onscroll = function () {
   scrollFunction();

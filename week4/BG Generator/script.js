@@ -6,8 +6,6 @@ const direction = document.querySelectorAll('input [name="arrow"]');
 
 let text = document.querySelector ('p')
 
-
-
 const selectedGradient = (event) => {
 
   event.preventDefault();
@@ -19,13 +17,11 @@ const selectedGradient = (event) => {
   }
 
   let gradient = `linear-gradient(${selectedValue}, ${firstColor.value}, ${secondColor.value})`;
-  console.log(gradient);
 
   document.body.style.backgroundImage = gradient;
   text.textContent = gradient + ';';
 };
 
-    
   form.addEventListener("change", selectedGradient);
 
 

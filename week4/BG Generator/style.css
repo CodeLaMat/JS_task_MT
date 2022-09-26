@@ -9,8 +9,6 @@ body {
     background-image: linear-gradient(#fcde7c , #d47ae6);
     height: 100%;
     margin:0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-size: 12px;
 }
 
@@ -50,13 +48,6 @@ label {
   input[type='radio']:checked + label {
     background-color:#bfb;
     border-color: #4c4;
-}
-
-.first, .second {
-    height: 50px;
-    width: 100px;
-    padding: 0;
-    margin: 0px;
 }
 
 input[type="radio"] {
