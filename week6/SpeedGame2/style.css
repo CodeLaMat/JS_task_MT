@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.custom{
+    cursor: url(/week6/SpeedGame2/best\ crosshair\ ever.cur);
+}
 
 body {
     background: #b3b66c;
@@ -30,7 +33,6 @@ h1 {
 
 }
 
-  
 .circle {
     display: inline-block;
     border-radius: 80px ;
@@ -39,16 +41,19 @@ h1 {
     height: 150px;
     cursor: pointer;
     background-color: rgb(112, 93, 93);
+    pointer-events: none;
+
 }
 
 .circle.active {
-    background-color: #4e6973;
+    background-color: #cbd9de;
 }
 
 
 .buttons {
     margin: 50px;
     text-align: center;
+    
 }
 .startButton, .stopButton {
     margin: 30px;
@@ -57,8 +62,6 @@ h1 {
     border: none;
     border-radius: 8px;
 }
-
-
 
 .overlay {
     position: fixed;
@@ -70,25 +73,30 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-.result{
-    background-color: white;
-    min-height: 50vh;
-    width: 50vw;
+.modal{
+    background-color: rgb(48, 47, 47);
+    min-height: 40vh;
+    width: 40vw;
     border-radius: 10px;
-    color: #17212f;
+    color: #ffffff;
     padding: 3rem;
     box-shadow: 0 0 10px rgb(70, 65, 65);
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
-.overlay, .result, .close {
-    display: none;
+.overlay, .modal, .close {
+    display:none;
 }
 
 
-.close {
+.btnClose {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background: black;
 }
