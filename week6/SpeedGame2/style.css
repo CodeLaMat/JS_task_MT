@@ -41,11 +41,10 @@ h1 {
     height: 150px;
     cursor: pointer;
     background-color: rgb(112, 93, 93);
-    pointer-events: none;
 
 }
 
-.circle.active {
+.circle.activated {
     background-color: #cbd9de;
 }
 

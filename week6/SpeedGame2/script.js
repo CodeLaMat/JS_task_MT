@@ -19,17 +19,19 @@ const randomTime = (min, max) => {
 };
 
 circles.forEach ((circle, i) => {
-    circle.addEventListener("click",() => clickCircle(i))
+    circle.addEventListener("click", () => clickCircle(i))
 });
 
-const clickCircle =(i) => {
-    if (i.circle === active) {
+
+
+const clickCircle = (i) => {
+    if (i !== active) {
+        return stopGame();
+    } else {
         console.log("circle clicked was:", i+1);
         score++;
-        scoreIs.textContent = `Your score is: ${score}`;
-    } else {
-        stopGame();
     }
+    scoreIs.textContent = `Your score is: ${score}`;
 };
 
 
@@ -37,12 +39,12 @@ const clickCircle =(i) => {
 const startGame = () => {
     let nextActive = pickNew(active);
 
-    circles[nextActive].classList.toggle('active');
-    circles[active].classList.remove('active');
+    circles[nextActive].classList.toggle('activated');
+    circles[active].classList.remove('activated');
 
     active = nextActive;
 
-    console.log("curent active numer is:", 'active')
+    console.log("curent active numer is:", active)
     timer = setTimeout(startGame,pace);
     pace = pace - 10;
 
@@ -59,8 +61,8 @@ const startGame = () => {
 
 // Stop game
 const stopGame = ()=> {
-    overlay.style.display = "flex";
     clearTimeout(timer);
+    overlay.style.display = "flex";
     modal.style.display = "block";
     btnClose.style.display = "block";
     resultText.textContent = `The game is over. Your score is: ${score}`;
