@@ -7,6 +7,12 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const resultText = document.querySelector('#resultText');
 
+// Sound Variables
+let startSound = new Audio ('music/game_start_sound.wav');
+let clickSound = new Audio ('music/Click_sound.wav');
+let mediumScoreSound = new Audio('music/medium_score_sound.wav');
+let higScoreSound = new Audio('music/success.mp3');
+let ohNoSound = new Audio('music/ohNo.mp3');
 
 let score = 0;
 let active = 0;
@@ -30,6 +36,7 @@ const clickCircle = (i) => {
     } else {
         console.log("circle clicked was:", i+1);
         score++;
+        clickSound.play();
     }
     scoreIs.textContent = `Your score is: ${score}`;
 };
@@ -37,6 +44,7 @@ const clickCircle = (i) => {
 
 // Start game
 const startGame = () => {
+    startSound.play();
     let nextActive = pickNew(active);
 
     circles[nextActive].classList.toggle('activated');
@@ -65,7 +73,17 @@ const stopGame = ()=> {
     overlay.style.display = "flex";
     modal.style.display = "block";
     btnClose.style.display = "block";
-    resultText.textContent = `The game is over. Your score is: ${score}`;
+    startSound.pause();
+    if (score==0 && score<=5) {
+        resultText.textContent  = `Are you so slow? Your score is: ${score}. Let's try again.`;
+        ohNoSound.play();
+        } else if (score=>6 && score <=20) {
+        resultText.textContent  = `You did well. But I believe you can do better. Your score is ${score}. Let's try again.`;
+        mediumScoreSound.play();
+        } else if (score>20) {
+        resultText.textContent  = `You are close to beat a record of all time. Your score is: ${score}.`;
+        higScoreSound.play();   
+        }
 };
 
 

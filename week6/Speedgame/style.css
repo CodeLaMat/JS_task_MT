@@ -3,17 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-.custom{
-    cursor: url(/week6/SpeedGame2/best\ crosshair\ ever.cur);
-}
+
 
 body {
-    background: #b3b66c;
+    background-image: url(https://images.unsplash.com/photo-1567349077939-101215abd8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
     font-family:'Noto Sans', sans-serif;
-    color: rgb(6, 6, 6);
-    margin: 50px;    
+    color: black;
+    margin: 50px;
+    background-size: 100%;
 }
-
 
 h1 {
     text-align: center;
@@ -22,10 +20,25 @@ h1 {
     margin: 0;
 }
 
+p {
+    color: white;
+}
+
 #scoreIs {
     padding: 0 3rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction:row;
+    margin-top: 0;
+
+  }
+
+  #scoreBoard{
+    background-color: rgba(25, 65, 39, 0.364);
+    display: flex;
+    width: 20%;
+    border-radius: 10px 40px 3px 40px;
   }
 
 .circles {
@@ -40,12 +53,15 @@ h1 {
     width: 150px;
     height: 150px;
     cursor: pointer;
-    background-color: rgb(112, 93, 93);
+    /* background-color: rgb(25, 65, 39); */
+    background-image: url(/Speedgame/tomato.jpg);
+    background-size: 100%;
 
 }
 
 .circle.activated {
-    background-color: #cbd9de;
+    background-image:url(/Speedgame/pizza.jpg);
+    background-size: 100%;
 }
 
 
@@ -60,7 +76,11 @@ h1 {
     width: 100px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(25, 65, 39);
+    color: white;
 }
+
 
 .overlay {
     position: fixed;
@@ -75,7 +95,7 @@ h1 {
 
 }
 .modal{
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(25, 65, 39);
     min-height: 40vh;
     width: 40vw;
     border-radius: 10px;
@@ -91,11 +111,11 @@ h1 {
     display:none;
 }
 
-
 .btnClose {
     position: absolute;
     top: 10px;
     right: 10px;
     color: white;
-    background: black;
+    background: rgb(25, 65, 39);
+    border: 0;
 }
