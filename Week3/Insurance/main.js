@@ -1,18 +1,19 @@
 const form = document.querySelector('form');
-const customer = document.querySelector('#name');
-const customerAge = document.querySelectorAll('#age');
+const customerName = document.querySelector('#name');
+const customerAge = document.querySelector('#age');
 const health = document.querySelectorAll('input[name="health"]');
-const habit = document.querySelectorAll('input[name="habits"]');
-let resultText = document.querySelector('#resultText');
+const habits = document.querySelectorAll('input[name="habits"]');
+const resultText = document.querySelector('#resultText');
 
   let riskIndex = 500; 
   let age = "";
 
 
 const giveRiskIndex = (event) => {
+    event.preventDefault();
 
     age = customerAge.value;
-    customer = customer.value;
+    customer = customerName.value;
 
         if (age >18 && age <25) {
           riskIndex = riskIndex + riskIndex*0.1;
@@ -46,22 +47,23 @@ const giveRiskIndex = (event) => {
       }
       });
 
-      habit.forEach((item) => {
+      habits.forEach((item) => {
         if (item.checked) {
           riskIndex += riskIndex*0.05;
         }
-        if (habit == "dailyExercise") {
+        if (habits == "dailyExercise") {
           riskIndex -= riskIndex*0.5;
-      } 
-    });
+      }   
   
-
+    });
+    
       form.reset();
+      resultText.innerHTML = `Dear,${customer}. You risk index is: ${riskIndex}.Please care your health.`;
 
-        resultText.textContent = `Dear,${customer}. You risk index is: ${riskIndex}.Please care your health`;
 
     };
-
+ 
+  
 
     form.addEventListener('submit', giveRiskIndex);
 

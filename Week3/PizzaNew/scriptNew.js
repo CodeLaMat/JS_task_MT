@@ -1,5 +1,5 @@
 const form = document.querySelector("form");
-const customer = document.querySelector('#name');
+const customerName = document.querySelector('#name');
 const toppings = document.querySelectorAll('input[name="toppings"]');
 const delivery = document.querySelector('#delivery');
 const size = document.querySelectorAll('[name="size"]');
@@ -12,10 +12,11 @@ let deliveryPrice = 0;
 let totalPrice = 0;
 let sizeResult = '';
 let toppingsResult = [];
-let customerName = customer.value;
+let customer = customerName.value;
 
 
-const takeOrder = () => {
+const takeOrder = (e) => {
+  e.preventDefault();
 
     size.forEach((item) => {
         if (item.checked) {
@@ -55,10 +56,9 @@ const takeOrder = () => {
     
       let text = 
 
-      form.reset();
+        orderText.textContent = `Thank you for the order,${customer}. You ordered pizza for ${sizeResult}. We will add toppings: ${toppingsResult.join(', ')}and delivery method is: ${deliveryResult}. Total price is: ${totalPrice} €.`;
 
-        orderText.textContent = `Thank you for the order,${customerName}. You ordered pizza for ${sizeResult}. We will add toppings: ${toppingsResult.join(', ')}and delivery method is: ${deliveryResult}. Total price is: ${totalPrice} €.`;
-
+        form.reset();
     };
 
 
