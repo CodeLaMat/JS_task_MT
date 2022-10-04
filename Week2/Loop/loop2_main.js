@@ -2,19 +2,16 @@
 
 // for (let x = 98, y=2;  x>0, y<=100; x -= 2,y+=2) {
 
-//        console.log (y , x); 
-//        }  
+//        console.log (y , x);
+//        }
 
+let answer = "";
+let end = 100;
 
-       let answer = "";
-       let end = 100;
+for (let x = 2; x < end; x += 2) {
+  answer += " " + x + " ";
+  answer += " " + end + " ";
+  end -= 2;
+}
 
-       for (let x = 2; x<end; x+=2) {
-
-        answer += " " + x + " ";
-        answer += " " + end + " ";
-        end-=2;
-        }  
-
-        console.log  (answer); 
-
+console.log(answer);

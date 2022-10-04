@@ -1,121 +1,116 @@
-* _{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* _ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    background-image: url(https://images.unsplash.com/photo-1567349077939-101215abd8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-    font-family:'Noto Sans', sans-serif;
-    color: black;
-    margin: 50px;
-    background-size: 100%;
+  background-image: url(https://images.unsplash.com/photo-1567349077939-101215abd8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+  margin: 50px;
+  background-size: 100%;
 }
 
 h1 {
-    text-align: center;
-    font-size: 5rem;
-    line-height: 1;
-    margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  line-height: 1;
+  margin: 0;
 }
 
 p {
-    color: white;
+  color: white;
 }
 
 #scoreIs {
-    padding: 0 3rem;
-    text-align: center;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction:row;
-    margin-top: 0;
+  padding: 0 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
 
-  }
-
-  #scoreBoard{
-    background-color: rgba(25, 65, 39, 0.364);
-    display: flex;
-    width: 20%;
-    border-radius: 10px 40px 3px 40px;
-  }
+#scoreBoard {
+  background-color: rgba(25, 65, 39, 0.364);
+  display: flex;
+  width: 20%;
+  border-radius: 10px 40px 3px 40px;
+}
 
 .circles {
-    text-align: center;
-
+  text-align: center;
 }
 
 .circle {
-    display: inline-block;
-    border-radius: 80px ;
-    border: none;
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    /* background-color: rgb(25, 65, 39); */
-    background-image: url(/Speedgame/tomato.jpg);
-    background-size: 100%;
-
+  display: inline-block;
+  border-radius: 80px;
+  border: none;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  /* background-color: rgb(25, 65, 39); */
+  background-image: url(/Speedgame/tomato.jpg);
+  background-size: 100%;
 }
 
 .circle.activated {
-    background-image:url(/Speedgame/pizza.jpg);
-    background-size: 100%;
+  background-image: url(/Speedgame/pizza.jpg);
+  background-size: 100%;
 }
-
 
 .buttons {
-    margin: 50px;
-    text-align: center;
-    
+  margin: 50px;
+  text-align: center;
 }
-.startButton, .stopButton {
-    margin: 30px;
-    height: 40px;
-    width: 100px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: rgb(25, 65, 39);
-    color: white;
+.startButton,
+.stopButton {
+  margin: 30px;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(25, 65, 39);
+  color: white;
 }
-
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #d9e4f6ba;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #d9e4f6ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.modal{
-    background-color: rgb(25, 65, 39);
-    min-height: 40vh;
-    width: 40vw;
-    border-radius: 10px;
-    color: #ffffff;
-    padding: 3rem;
-    box-shadow: 0 0 10px rgb(70, 65, 65);
-    position: relative;
-    justify-content: center;
-    align-items: center;
+.modal {
+  background-color: rgb(25, 65, 39);
+  min-height: 40vh;
+  width: 40vw;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgb(70, 65, 65);
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-.overlay, .modal, .close {
-    display:none;
+.overlay,
+.modal,
+.close {
+  display: none;
 }
 
 .btnClose {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    background: rgb(25, 65, 39);
-    border: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background: rgb(25, 65, 39);
+  border: 0;
 }
