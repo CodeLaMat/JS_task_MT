@@ -1,12 +1,12 @@
-// Define all the requried variables
 const form = document.querySelector("#bgGenerator");
-const firstColor = document.querySelector(".first");
-const secondColor = document.querySelector(".second");
-const direction = document.querySelectorAll('input [name="arrow"]');
+
+let firstColor = document.querySelector(".color1");
+let secondColor = document.querySelector(".color2");
+let direction = document.querySelectorAll('input[name="arrow"]');
 
 let text = document.querySelector("p");
 
-const selectedGradient = (event) => {
+const setGradient = (event) => {
   event.preventDefault();
   let selectedValue;
   for (const sel of direction) {
@@ -16,9 +16,10 @@ const selectedGradient = (event) => {
   }
 
   let gradient = `linear-gradient(${selectedValue}, ${firstColor.value}, ${secondColor.value})`;
+  console.log(gradient);
 
   document.body.style.backgroundImage = gradient;
   text.textContent = gradient + ";";
 };
 
-form.addEventListener("change", selectedGradient);
+form.addEventListener("change", setGradient);

@@ -6,7 +6,7 @@
 
 body {
   background-image: url(https://images.unsplash.com/photo-1567349077939-101215abd8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Courgette", cursive;
   color: black;
   margin: 50px;
   background-size: 100%;
@@ -35,7 +35,7 @@ p {
 #scoreBoard {
   background-color: rgba(25, 65, 39, 0.364);
   display: flex;
-  width: 20%;
+  width: 19%;
   border-radius: 10px 40px 3px 40px;
 }
 
@@ -50,13 +50,12 @@ p {
   width: 150px;
   height: 150px;
   cursor: pointer;
-  /* background-color: rgb(25, 65, 39); */
-  background-image: url(/Speedgame/tomato.jpg);
+  background-image: url(/week6/Speedgame/tomato.jpg);
   background-size: 100%;
 }
 
 .circle.activated {
-  background-image: url(/Speedgame/pizza.jpg);
+  background-image: url(/week6/Speedgame/pizza.jpg);
   background-size: 100%;
 }
 
@@ -88,7 +87,7 @@ p {
   align-items: center;
 }
 .modal {
-  background-color: rgb(25, 65, 39);
+  background-color: rgba(25, 65, 39, 0.66);
   min-height: 40vh;
   width: 40vw;
   border-radius: 10px;
@@ -98,6 +97,7 @@ p {
   position: relative;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 .overlay,
