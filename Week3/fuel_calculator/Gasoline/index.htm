@@ -1,41 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css">
-  
-  </head>
-
-  <body>
-    <h1>
-      FUEL PRICE CALCULATOR FOR HELSINKI
-    </h1><br>
-    <h2>
-      1. Gasoline price calculator
-    </h2>
-
-    <p>
-
-    </p>
-
-    <div>
-      <label for="price">Price:</label>
-      <input type="number" id="price" value="2.01" readonly/>
-    </div> <br>
-    <div>
-      <label for="money">Money:</label>
-      <input type="number" id="money" placeholder="Please enter the amount"/>
-    </div>
-      
-     <p>
-    <button id="button" onclick="fuelCalculator();">Calculate</button>
-    <input type="text" id="total" readonly>
-   </p>
-
-<script type "text/javaScript" src="main.js"></script> 
-
-    </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,22 +9,18 @@
   </head>
   <body>
     <h1>Gasoline price calculator</h1>
-    <p>
-      Make a program that asks the price of the gasoline and amount of money
-      from the user. The program calculates how much gasoline the user gets with
-      the money. The result is displayed to screen. if there are more than 10
-      litres, then message on the screen: "good, you can escape now", if less,
-      it shows the message: "Ups, you have to stay here."
-    </p>
-    <div>
-      <label for="price">Price:</label>
-      <input type="number" id="price" />
+    <p></p>
+    <div id="inputBlock">
+      <div>
+        <label for="price">Price:</label>
+        <input type="number" id="price" />
+      </div>
+      <div>
+        <label for="money">Money:</label>
+        <input type="number" id="money" />
+      </div>
     </div>
-    <div>
-      <label for="money">Money:</label>
-      <input type="number" id="money" />
-    </div>
-    <button onclick="calculate()">Calculate</button>
+    <button id="button" onclick="calculate()">Calculate</button>
 
     <p id="answer"></p>
     <script src="main.js"></script>

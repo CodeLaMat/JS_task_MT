@@ -8,7 +8,7 @@ body {
   display: flex;
   grid: 5fr 5fr;
   font: "Raleway", sans-serif;
-  background: zzrgb(203, 187, 187);
+  background: rgb(203, 187, 187);
   height: 100%;
   margin: 30px;
 }
@@ -42,11 +42,13 @@ button {
   width: 90px;
   margin-top: 30px;
   background-color: rgb(65, 78, 78);
-  border: none;
+  border: solid 1px;
+  border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 
-h2 {
+h3 {
   margin: 20px;
 }
 

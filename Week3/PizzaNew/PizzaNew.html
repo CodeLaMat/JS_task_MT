@@ -23,7 +23,7 @@
                 <form>
               
                     <h3>Who is ordering?</h3> 
-                        <input type="text" placeholder="Your name please" id="name" required/>
+                        <input class="name" type="text" placeholder="Your name please" required/>
             
                     <div class="pizzaSize">
                             
@@ -31,7 +31,7 @@
                         <p>The more pizza you order the less you pay</p>
                     </div>
                     <div>
-                        <input id="normal" type="radio" value="Normal" name="size" checked/>
+                        <input id="normal" type="radio" value="Normal" name="size"/>
                         <label for="normal">Normal sized pizza -7.50 €</label>
                     </div>
                     <div>
@@ -52,7 +52,7 @@
                             <p>The first 4 toppings are included in the price. Every extra toppings adds 0.50 euros to the sum</p>
                     </div>
                     <div>
-                        <input type="checkbox" name="toppings" id="sausage" value="sausage" checked/>
+                        <input type="checkbox" name="toppings" id="sausage" value="sausage"/>
                         <label for="sausage">Sausage Cubeo</label>
                     </div>
                     <div>
@@ -128,9 +128,9 @@
                              <p>Please select the delivery method</p>
                     </div>
                         <select id="delivery" name="delivery" required>
-                            <option value="home">Home delivery + 5,00€ </option>
-                            <option value="eatIn">Eat in </option>
-                            <option value="pickUp">Pick up</option>
+                            <option value="Home delivery">Home delivery + 5,00€ </option>
+                            <option value="Eat in">Eat in </option>
+                            <option value="Pickup">Pick up</option>
                         </select>
 
                         <p>Please submit your order</p>

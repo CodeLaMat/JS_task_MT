@@ -11,7 +11,7 @@ const ownrInput = document.querySelector("#owner");
 const prcInput = document.querySelector("#price");
 const clrInput = document.querySelector("#colour");
 
-let licenseData = [];
+let licenseDatabase = [];
 
 btnAdd.addEventListener("click", (event) => {
   event.preventDefault();
@@ -34,23 +34,24 @@ btnAdd.addEventListener("click", (event) => {
 
   table.innerHTML += template;
   if (license.value != "") {
-    licenseData.push(license);
+    licenseDatabase.push(license);
   }
-  return licenseData;
+  return licenseDatabase;
 });
 
 btnSearch.addEventListener("click", (event) => {
   event.preventDefault();
-
+  let licenseInSearch = searchInput.value;
   let foundLicense = [];
 
-  licenseData.forEach((license) => {
-    if ((license = searchInput.value)) {
-      foundLicense = license;
-      searchResult.textInput = `${foundLicense} license number is found in our database`;
+  licenseDatabase.forEach((license) => {
+    if (licenseInSearch == license) {
+      foundLicense.push(license);
+      searchResult.textContent = `${foundLicense} license number is found in our database`;
     } else {
       foundLicense = " ";
-      searchResult.textInput = "There is not any car with that license number";
+      searchResult.textContent =
+        "There is not any car with that license number";
     }
   });
 });

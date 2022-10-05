@@ -50,7 +50,9 @@ const giveRiskIndex = (event) => {
   });
 
   form.reset();
-  resultText.innerHTML = `Dear,${customer}. You risk index is: ${riskIndex}.Please care your health.`;
+  resultText.innerHTML = `Dear,${customer}. You risk index is: ${Math.floor(
+    riskIndex
+  )}.Please care your health.`;
 };
 
 form.addEventListener("submit", giveRiskIndex);

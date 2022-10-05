@@ -15,7 +15,7 @@ body {
   background-color: rgb(255, 255, 255);
   max-width: 350px;
   min-width: 200px;
-  height: 80%;
+  height: 85%;
   color: #333;
   text-align: center;
   padding: 2rem;
@@ -24,6 +24,7 @@ body {
 
 h2 {
   margin: 2rem auto 1rem;
+  font-size: 25px;
 }
 
 .colors {
@@ -77,4 +78,8 @@ input[type="radio"]:checked + label {
   font-size: 16px;
   border: 1px solid rgb(217, 200, 200);
   border-radius: 4px;
+}
+
+.material-icons:hover {
+  background-color: #545454;
 }

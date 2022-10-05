@@ -50,9 +50,9 @@ button {
   padding: 1rem 2rem;
 }
 button:hover {
-  color: white;
+  color: rgb(71, 62, 62);
   background: rgb(209, 138, 7);
-  border: none;
+  border: 0;
   padding: 1rem 2rem;
   cursor: pointer;
 }
@@ -70,7 +70,7 @@ button:hover {
     no-repeat fixed;
   margin-left: auto;
   display: block;
-  width: 1000px;
+  width: 900px;
   position: relative;
 }
 
