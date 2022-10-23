@@ -9,32 +9,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Pokedex</title>
+    <title>Pokédex</title>
   </head>
   <body>
     <main>
-      <h1>Pokedex</h1>
+      <h1>Pokédex</h1>
       <div class="searchBox">
-        <input
-          id="pokemonName"
-          type="Pokemon name"
-          placeholder="Pokemon name"
-        />
-        <button id="search">🔎</button>
+        <input id="search" type="text" placeholder="Pokemon name" />
+      </div>
+      <h2 class="title" id="title">Pokemon Generations</h2>
+
+      <div class="buttons">
+        <button class="all button" value="all">All</button>
+        <button class="gen1 button" value="1">Generation 1</button>
+        <button class="gen2 button" value="2">Generation 2</button>
+        <button class="gen3 button" value="3">Generation 3</button>
+        <button class="gen4 button" value="4">Generation 4</button>
+        <button class="gen1 button" value="5">Generation 5</button>
+        <button class="gen2 button" value="6">Generation 6</button>
+        <button class="gen3 button" value="7">Generation 7</button>
+        <button class="gen4 button" value="8">Generation 8</button>
       </div>
 
-      <div class="gererations">
-        <button class="gen" id="1">Gen1</button>
-        <button class="gen" id="2">Gen2</button>
-        <button class="gen" id="3">Gen3</button>
-        <button class="gen" id="4">Gen4</button>
-        <button class="gen" id="5">Gen5</button>
-        <button class="gen" id="6">Gen6</button>
-        <button class="gen" id="7">Gen7</button>
-        <button class="gen" id="8">Gen8</button>
-      </div>
-
-      <div class="pokemonBox"></div>
+      <div id="poke_container" class="poke-container"></div>
     </main>
 
     <script src="script.js"></script>
