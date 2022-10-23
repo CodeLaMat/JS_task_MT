@@ -97,8 +97,7 @@ function createPokemonCard(pokemon) {
   let pokeInnerHTML = "";
   pokemonBox.style.backgroundColor = cardColor;
   if (pokemon.types.length > 1) {
-    pokeInnerHTML = ` <div class="container">
-        <div class="img-container">
+    pokeInnerHTML = ` <div class="img-container">
             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${
               pokemon.id
             }.svg" alt="${name}" />
@@ -115,11 +114,9 @@ function createPokemonCard(pokemon) {
               pokemon.types[1].type.name
             )}" alt="pokemonType" />
         </div>
-        </div>
     `;
   } else {
-    pokeInnerHTML = `<div class="container">
-    <div class="img-container">
+    pokeInnerHTML = `<div class="img-container">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${
         pokemon.id
       }.svg" alt="${name}" />
@@ -130,7 +127,6 @@ function createPokemonCard(pokemon) {
       <img class="typeImg" src="${typeIcns(
         pokemon.types[0].type.name
       )}" alt="pokemonType" />
-        </div>
         </div>
     `;
   }
